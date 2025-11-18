@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background-image: url("images/climb_backG.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #c8af7e;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: purple; 
+    text-align: center;
+    padding: 20px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.3); 
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.left img {
+    width: 600px;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.right {
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
+    border-radius: 16px;
+}
+
+.right h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.right p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    background-color: purple;
+    padding: 10px;
+}
+
+.name-line {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.project {
+    background-color: #f9f9f9;
+    width: 490px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.project img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.project h2 {
+    color: #c8af7e;
+    margin-top: 10px;
+}
+
+
+.project p {
+    color: #c8af7e;
+}
+
+nav {
+  background-color: purple; 
+  padding: 10px 0;
+}
+
+.siteNavbar ul {
+  list-style-type: none;      
+  margin: 0;
+  padding: 0;
+  display: flex;                
+  justify-content: center;      
+  text-align: center;         
+}
+
+.siteNavbar li {
+  display: inline-block;      
+  margin: 0;             
+}
+
+.siteNavbar a {
+  display: block;
+  text-decoration: none;      
+  color: #f8e9c9;            
+  font-weight: bold;
+  padding: 8px 12px;         
+  border-radius: 6px;
+}
+
+.siteNavbar a:hover {
+  background-color: rgba(255,255,255,0.2); 
+}
+
+@media (max-width: 700px) {
+  .siteNavbar ul {
+    flex-direction: column;     
+    align-items: stretch;       
+    gap: 0;                    
+  }
+  .siteNavbar li { 
+    width: 100%; 
+  }
+  .siteNavbar a {
+    padding: 10px 5px;
+    border-top: 1px solid #f8e9c9;
+    border-radius: 0;           
+  }
+}
+
+.containerAMG {
+  display: grid;
+  grid-template-columns: 360px 1fr; 
+  gap: 22px;
+  align-items: center;         
+  margin: 20px;
+  padding: 22px;
+  width: auto;
+  min-height: unset;           
+  height: auto;
+  background: #ffffff;         
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  color: #222;                
+}
+
+
+.about-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #c8af7e;
+  font-size: 2rem;
+  letter-spacing: .3px;
+  margin: 2px 0 10px 0;
+}
+
+
+.about-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  max-height: 500px; 
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.about-text {
+  align-self: center;
+  max-width: 62ch;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #c8af7e;
+}
+
+.contactMain {
+  flex: 1;                       
+  display: flex;
+  justify-content: center;       
+  align-items: center;           
+  padding: 40px 20px;         
+}
+
+.contactInfo {
+  background-color: rgb(251, 251, 251);
+  padding: 25px 30px;            
+  border-radius: 16px;           
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);  
+  max-width: 520px;              
+  width: 90%;
+  min-height: 260px;             
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #c8af7e;
+  text-align: center;
+}
+
+
+.contactInfo h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.9rem;
+  letter-spacing: 0.5px;
+}
+
+
+.contactInfo p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+
+.contactInfo ul {
+  list-style-type: disc;        
+  padding-left: 1.5rem;
+  margin: 10px 0 15px 0;
+}
+
+.contactInfo li {
+  margin-bottom: 8px;
+}
+
+.contactInfo a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contactInfo .message {
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+  font-size: 0.98rem;
+}
