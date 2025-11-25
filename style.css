@@ -135,21 +135,7 @@ nav {
   background-color: rgba(255,255,255,0.2); 
 }
 
-@media (max-width: 700px) {
-  .siteNavbar ul {
-    flex-direction: column;     
-    align-items: stretch;       
-    gap: 0;                    
-  }
-  .siteNavbar li { 
-    width: 100%; 
-  }
-  .siteNavbar a {
-    padding: 10px 5px;
-    border-top: 1px solid #f8e9c9;
-    border-radius: 0;           
-  }
-}
+
 
 .containerAMG {
   display: grid;
@@ -256,4 +242,48 @@ nav {
   font-style: italic;
   text-align: center;
   font-size: 0.98rem;
+}
+
+@media (max-width: 700px) {
+  .siteNavbar ul {
+    flex-direction: column;     
+    align-items: stretch;       
+    gap: 0;                    
+  }
+  .siteNavbar li { 
+    width: 100%; 
+  }
+  .siteNavbar a {
+    padding: 10px 5px;
+    border-top: 1px solid #f8e9c9;
+    border-radius: 0;           
+  }
+
+  .project {
+    width: 100%;                
+    padding: 20px;              
+  }
+  
+  .containerAMG {
+    grid-template-columns: 1fr; 
+    gap: 15px;                  
+  }
+
+  .content {
+    flex-direction: column;     
+    margin: 10px;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .left img {
+    width: 100%;                
+    max-width: 100%;
+    border-radius: 24px;
+  }
+
+  .right {
+    max-width: 100%;
+    text-align: center;
+  }
 }
